@@ -6,8 +6,8 @@ namespace CalcTest
     {
         public static void GetExcelValuesFromFile(string path, ref List<double> xValues, ref List<double> yValues)
         {
-            string fileName = @"C:\Users\simon\source\repos\CalcTest\CalcTest\assets\values.xlsx";
-            //string fileName = @"values.xlsx";
+            //string fileName = @"C:\Users\simon\source\repos\CalcTest\CalcTest\assets\values.xlsx";
+            string fileName = @"values.xlsx";
 
             using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
             {

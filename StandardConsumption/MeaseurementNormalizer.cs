@@ -11,6 +11,8 @@ namespace CalcTest
 
             var xMax = (int)Math.Ceiling(xValues[xValues.Length - 1]);
             var xMin = (int)Math.Floor(xValues[0]);
+            
+            // i is temperature to use as threshold
             for (int i = xMin + 2; i <= xMax - 2; i++) // regression must contain at least two numbers
             {
                 var regressionXValues = xValues.Where(x => x <= i).ToArray();
